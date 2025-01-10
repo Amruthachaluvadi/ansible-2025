@@ -14,7 +14,7 @@
      vars:
       GREET: task
      ansible.builtin.debug:
-      msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
+      msg: "Hi from {{ GREET }}"
 
 
      #ansible_playbook -i inventory.ini var-preference.yaml -e "GREET='From ARGS'"
