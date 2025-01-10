@@ -13,8 +13,8 @@
    - name: Print the variables from Prompt
      vars:
       GREET: task
-     ansible.builtin.package
-     msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
+     ansible.builtin.debug:
+      msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
 
 
      #ansible_playbook -i inventory.ini var-preference.yaml -e "GREET='From ARGS'"

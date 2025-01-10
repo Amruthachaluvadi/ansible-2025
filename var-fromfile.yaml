@@ -5,6 +5,6 @@
   - vars.yaml
   tasks:
    - name: Print Couse Details
-     ansible.builtin.package:
-     msg: "Course is {{ COURSE }}, duration is {{ Duration }}, Trainer is {{ Trainer }}"  #Get the values from vars.file
+     ansible.builtin.debug:
+      msg: "Course is {{ COURSE }}, duration is {{ Duration }}, Trainer is {{ Trainer }}"  #Get the values from vars.file
 
