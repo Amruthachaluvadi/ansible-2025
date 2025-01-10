@@ -9,9 +9,9 @@
   - name: Pring Variables
     vars: # Task level variables, only for this task only, Local Variables
      COURSE: Ansible 
-    ansible.builtin.package:
+    ansible.builtin.debug:
      msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
   
   - name: Print Variables
-    ansible.builtin.package:
+    ansible.builtin.debug:
      msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"

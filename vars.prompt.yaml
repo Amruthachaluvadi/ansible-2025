@@ -13,5 +13,5 @@
      private: false
   tasks:
    - name: Print the variables from Prompt
-     ansible.builtin.package
+     ansible.builtin.debug:
       msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
