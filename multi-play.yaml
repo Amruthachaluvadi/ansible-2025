@@ -1,7 +1,7 @@
 - name: MultiPlay
   hosts: local
   connection: local  #managing its own node not need of any credentials
-  tasks
+  tasks:
   - name: play1
     ansible.builtin.debug:
     msg: "Hello from Play1"
@@ -10,7 +10,7 @@
 - name: MultiPlay2
   hosts: local
   connection: local  #managing its own node not need of any credentials
-  tasks
+  tasks:
   - name: play2
     ansible.builtin.debug:
     msg: "Hello from Play2"
