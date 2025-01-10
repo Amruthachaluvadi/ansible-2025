@@ -4,6 +4,5 @@
   - name: Ping the server
     ansible.builtin.ping:
   # Run this play book using below cmd
-  # ansible-playbook -i inventory.ini -e ansible_user=ec2_user -e ansible_password=Devops321 playbook1.yaml
+  # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=Devops321 playbook1.yaml
 
-  
