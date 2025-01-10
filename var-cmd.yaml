@@ -4,9 +4,9 @@
   tasks:
    - name: Print the variables from Prompt
      ansible.builtin.package
-     msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ DURATION }} trained by {{ TRAINER }}" 
+      msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ DURATION }} trained by {{ TRAINER }}" 
 
 
 #if no where varaibles are defined then we can provide during the cmd line
-#ansible-playbook -i inventory.ini  filename.yaml -e "COURSE='Aws with Devops'" -e "DURATION=120Hrs" -e "TRAINNER=Siva"
+#ansible-playbook -i inventory.ini  filename.yaml -e "COURSE='Aws with Devops123'" -e "DURATION=120Hrs" -e "TRAINNER=Siva"
 
