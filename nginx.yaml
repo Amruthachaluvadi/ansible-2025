@@ -4,11 +4,11 @@
   tasks:
   - name: Install Ngnix
     ansible.builtin.package:
-     name: ngnix
+     name: nginx
      state: present # to install, absent to remove
   - name: Start Ngnix
     ansible.builtin.service:
-     name: ngnix
+     name: nginx
      state: started
      enabled: yes  #to enable the service automatically
   # ansible-playbook -i inventory.ini -e ansible_user=ec2_user -e ansible_password=DevOps321 ngnix.yaml
