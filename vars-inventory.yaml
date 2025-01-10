@@ -1,0 +1,7 @@
+- name: Variable from Prompt
+  hosts: local
+  connection: local
+  tasks:
+   - name: Print the variables from Prompt
+     ansible.builtin.package
+     msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ DURATION }} trained by {{ TRAINER }}" #as no where defined it will chk ini file and get the details

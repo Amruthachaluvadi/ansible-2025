@@ -1,0 +1,10 @@
+- name: Variable From file
+  hosts: local
+  connection: local
+  vars_files:
+  - vars.yaml
+  tasks:
+   - name: Print Couse Details
+     ansible.builtin.package:
+     msg: "Course is {{ COURSE }}, duration is {{ Duration }}, Trainer is {{ Trainer }}"  #Get the values from vars.file
+

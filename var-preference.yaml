@@ -1,0 +1,20 @@
+- name: Variable from Prompt
+  hosts: local
+  connection: local
+  vars:
+   GREET: play
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+   - name: GREET 
+     prompt: Enter Greet value
+     private: false
+  tasks:
+   - name: Print the variables from Prompt
+     vars:
+      GREET: task
+     ansible.builtin.package
+     msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
+
+
+     #ansible_playbook -i inventory.ini var-preference.yaml -e "GREET='From ARGS'"
