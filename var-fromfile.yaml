@@ -6,5 +6,5 @@
   tasks:
    - name: Print Couse Details
      ansible.builtin.debug:
-      msg: "Course is {{ COURSE }}, duration is {{ Duration }}, Trainer is {{ Trainer }}"  #Get the values from vars.file
+      msg: "Course is {{ COURSE }}, duration is {{ DURATION }}, Trainer is {{ TRAINER }}"  #Get the values from vars.file
 
