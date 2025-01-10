@@ -14,4 +14,4 @@
   tasks:
    - name: Print the variables from Prompt
      ansible.builtin.package
-     msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
+      msg: "Name of the Course is {{ COURSE }} , duration of the couse is {{ Duration }} trained by {{ Trainer }}"
